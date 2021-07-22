@@ -1,0 +1,13 @@
+<%- include ("../_partial/_header.ejs"); %>
+ 
+<h1>This is pretty cool don't you think</h1>
+<p> Log in to create posts!</p>
+<% if(currentUser != null) { %>
+    <h3>Welcome <%= currentUser.username %>!</h3>
+<%}%>
+<% if(currentUser == null){ %>
+    <h3>You are not logged in. </h3>
+<%}%>
+    
+ 
+<%- include ("../_partial/_footer.ejs"); %>
